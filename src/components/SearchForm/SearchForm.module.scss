@@ -1,0 +1,7 @@
+.container {
+  @apply w-full flex items-center gap-5;
+
+  .button {
+    @apply py-3;
+  }
+}

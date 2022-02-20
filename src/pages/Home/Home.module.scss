@@ -1,0 +1,49 @@
+.container {
+  @apply flex flex-col items-center justify-center w-full gap-10;
+  min-height: 70vh;
+
+  .logoContainer {
+    @apply font-black flex items-center;
+    font-size: 100px;
+
+    img {
+      width: 200px;
+    }
+
+    h1 {
+      @apply relative top-4;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 80px;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      font-size: 60px;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 40px;
+
+      img {
+        width: 80px;
+      }
+    }
+  }
+
+  .searchBoxContainer {
+    @apply w-4/6;
+
+    @media only screen and (max-width: 500px) {
+      @apply w-full;
+    }
+  }
+}
